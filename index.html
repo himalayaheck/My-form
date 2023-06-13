@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        
+        <title>CURAJ</title>
+        <style>
+            body{
+            background-color: aqua;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        form{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: #59caec;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: green;
+        }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Central University Of Rajasthan </h1><br><br>
+        <form id="form">
+            <div class="form-control">
+                <lable for="name">
+                    NAME
+                </lable>
+                <input type="text"
+                 id="name" 
+                 placeholder="Enter your name" />
+            </div>
+            <div class="form-control">
+                <label for="e-mail">
+                    E-mail
+                </label>
+                <input type="e-mail"
+                id="e-mail"
+                placeholder="Enter your email id" />
+            </div>
+            <div class="form-control">
+                <label for="enroll num">
+                  Enrollment number
+                </label> 
+                <input type="text"
+                id="enroll num"
+                placeholder="Enrollment number"/>
+            </div>
+            <div class="form-control">
+                <lable for="option">
+                    Which option describes you
+                </lable>
+                <select name="option" id="option">
+                    <option value="student">Student</option>
+                    <option value="staff">Staff</option>
+                    <option value="teaching stuff">Teaching Staff</option>
+                    <option value="other ">other</option>
+                </select>
+            </div> 
+                <div class="form-control">
+                    <label>
+                     Would you recommend CURAJ to your friend?
+                    </label>
+         
+                
+                    <label for="recommed-1">
+                        <input type="radio"
+                               id="recommed-1"
+                               name="recommed">Yes</input>
+                    </label>
+                    <label for="recommed-2">
+                        <input type="radio"
+                               id="recommed-2"
+                               name="recommed">No</input>
+                    </label>
+                    <label for="recommed-3">
+                        <input type="radio"
+                               id="recommed-3"
+                               name="recommed">Maybe</input>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label>Which club you want to join
+                        <small>(Check all that apply)</small>
+                    </label>
+                    <!-- Input Type Checkbox -->
+                    <label for="inp-1">
+                        <input type="checkbox"
+                               name="inp">Dance</input></label>
+                    <label for="inp-2">
+                        <input type="checkbox"
+                               name="inp">Drama</input></label>
+                    <label for="inp-3">
+                        <input type="checkbox"
+                               name="inp">Book</input></label>
+                    <label for="inp-4">
+                        <input type="checkbox" 
+                               name="inp">littrary</input></label>
+                    <label for="inp-5">
+                        <input type="checkbox"
+                               name="inp">coding</input></label>
+                    <label for="inp-6">
+                        <input type="checkbox"
+                               name="inp">sports</input></label>
+                               </div>
+                 <div class="form-control">
+                     <label for="comment">
+                                    Any comments or suggestions
+                     </label>
+                     
+                                <!-- multi-line text input control -->
+                     <textarea name="comment" id="comment"
+                                    placeholder="Enter your comment here">
+                     </textarea>
+                            </div>
+                            <button type="submit" value="submit">
+                                Submit
+                            </button>
+
+           
+        </form>
+    </body>
+</html>
